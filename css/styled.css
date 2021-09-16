@@ -1,0 +1,85 @@
+h1{
+   margin: 0 auto;
+   text-align: center;
+   background-color: #8614f1;
+   width: fit-content;
+   padding: 5px 10px;
+   border-radius: 5px;
+   color: #fff;
+}
+
+.txt{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 2px 0;
+}
+
+.envioPalpite, button{
+    background-color: #3366ff;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 2px 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.envioPalpite:hover, button:hover{
+    background-color: #7375f5;
+    color: #572626;
+}
+.campoPalpite{
+    background-color: #eee;
+    font-weight: 600;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #000;   
+}
+
+.jogo{
+    background-color: #fcffcc;
+    padding: 10px;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px; 
+}
+
+.palpites{
+    background-color: #f3ef07;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.baixoOuAlto{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.ultimoPalpite{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+}
+
+footer{
+    text-align: center;
+}
+
+button{
+    margin-left: 45%;
+}

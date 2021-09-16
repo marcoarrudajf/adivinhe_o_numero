@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styled.css">
+
+    <!-- Usando defer ou async para carregamento do script, async quando não dependemos de outro script e defer para carregar na ordem quando um script depende do carregamendo do outro. veja: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies -->
+    <script src="/javaScript/main.js" defer></script>
+
+
+    <title>Estudando a documentação JS</title>
+</head>
+
+<body>
+    <h1>Adivinhe o Número</h1>
+    <p class="txt">Digite um número de 1 a 100 e tente acertar o valor.</p>
+    <p class="txt">Você terá 10 chances de acertar.</p>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <!-- jogo para adivinhar o numero sorteado -->
+    <div class="jogo">
+        <div class="cabecalho">
+            <label for="campoPalpite">Digite um Palpite:</label>
+            <input type="text" id="campoPalpite" class="campoPalpite">
+            <input type="submit" value="Enviar Palpite" class="envioPalpite">
+        </div>
+        <p class="palpites"></p>
+        <p class="ultimoPalpite"></p>
+        <p class="baixoOuAlto"></p>
+    </div>
+
+    <p class="txt">Treinamento em JavaScript realizado em setembro de 2021.</p>
+
+</body>
+
+</html>
