@@ -29,9 +29,12 @@ function conferirPalpite() {
         ultimoPalpite.textContent = 'Errado!';
         ultimoPalpite.style.backgroundColor = 'red';
         if (palpiteUsuario > 100) {
-            ultimoPalpite.textContent = 'Número inválido!'
+            palpites.textContent = 'Número inválido!'
+            //configFimDeJogo();
+            reiniciarJogo();
         }
-        if (palpiteUsuario < numeroAleatorio) {
+        if (palpiteUsuario <
+            numeroAleatorio) {
             baixoOuAlto.textContent = 'Seu palpite está muito baixo';
         } else if (palpiteUsuario > numeroAleatorio) {
             baixoOuAlto.textContent = ' Seu palpite está muito alto'
@@ -54,6 +57,8 @@ function configFimDeJogo() {
 }
 
 function reiniciarJogo() {
+    campoPalpite.value = ' ';
+    campoPalpite.focus();
     contagemPalpite = 1;
     var reiniciarParas = document.querySelectorAll('.resultadoParas p');
     for (var i = 0; i < reiniciarParas.length; i++) {
